@@ -19,7 +19,7 @@
 
 1. **克隆或下载本项目**
    ```bash
-   git clone https://github.com/yourusername/Hubei-College-Admission-Checker.git
+   git clone https://github.com/GooGuJiang/Hubei-College-Admission-Checker.git
    cd Hubei-College-Admission-Checker
    ```
 
@@ -28,14 +28,19 @@
 
 
 3. **填写查询信息**
-   打开 `config.json` 文件，填写报名号、出生年月日和接收通知的邮箱。例如：
+   打开 `config.json` 文件，填写报名号、出生年月日和接收通知的邮箱。例如(支持多个报名号查询)：
    ```json
    {
      "accounts": [
        {
-         "ksh": "your_registration_number",
+         "ksh": "your_registration_number1",
          "sfzh": "YYMMDD",
-         "email": "recipient@example.com"
+         "email": "recipient1@example.com"
+       },
+       {
+         "ksh": "your_registration_number2",
+         "sfzh": "YYMMDD",
+         "email": "recipient2@example.com"
        }
      ]
    }
