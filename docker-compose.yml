@@ -1,0 +1,9 @@
+version: '3'
+services:
+  status-checker:
+    build: .
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: always
